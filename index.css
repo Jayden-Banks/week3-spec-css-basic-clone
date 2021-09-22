@@ -43,9 +43,6 @@ header {
   color: #ffc800;
 }
 
-
-
-
 #section-1 {
   /* width: 100%; */
   background-repeat: no-repeat;
@@ -87,9 +84,8 @@ header {
   font-weight: bold;
 }
 
-
 #section-2 {
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
 }
@@ -122,10 +118,10 @@ header {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 2rem;  
+  padding-top: 2rem;
+  flex-wrap: wrap;
 }
 .div-section2-services {
-
   /* background-color: black; */
   display: flex;
   flex-direction: column;
@@ -167,10 +163,9 @@ header {
 .p-section2-services {
   font-size: 16px;
   font-family: "Roboto Slab";
-  color: #6C757D;
+  color: #6c757d;
   line-height: 1.5rem;
 }
-
 
 #section-3 {
   margin-top: 100px;
@@ -193,7 +188,6 @@ header {
   justify-content: center;
   align-self: center;
 }
-
 
 .div-section3-portfolio {
   flex: 0;
@@ -251,7 +245,7 @@ header {
   cursor: pointer;
 }
 .div-section3-img > img:active {
-  filter: brightness(150%)
+  filter: brightness(150%);
 }
 
 #section-4 {
@@ -278,7 +272,6 @@ header {
   margin-right: 2rem;
 }
 
-
 .section4-text-left {
   color: #212529;
   font-size: 24px;
@@ -292,7 +285,7 @@ header {
 }
 
 .section4-text > p {
-  color:#6C757D;
+  color: #6c757d;
   font-size: 16px;
   font-family: "Roboto Slab";
   line-height: 1.75rem;
@@ -305,7 +298,6 @@ header {
   flex-direction: column;
 }
 
-
 .section4-circle {
   width: 170px;
   height: 170px;
@@ -315,19 +307,19 @@ header {
 }
 
 #section4-circle-1 {
-  background-image: url(./assets/about-1.jpeg)
+  background-image: url(./assets/about-1.jpeg);
 }
 
 #section4-circle-2 {
-  background-image: url(./assets/about-2.jpeg)
+  background-image: url(./assets/about-2.jpeg);
 }
 
 #section4-circle-3 {
-  background-image: url(./assets/about-3.jpeg)
+  background-image: url(./assets/about-3.jpeg);
 }
 
 #section4-circle-4 {
-  background-image: url(./assets/about-4.jpeg)
+  background-image: url(./assets/about-4.jpeg);
 }
 
 .vl {
@@ -345,9 +337,6 @@ header {
 .section4-right {
   justify-content: flex-end;
 }
-
-
-
 
 .section4-text-right {
   color: #212529;
@@ -377,7 +366,6 @@ header {
   margin-bottom: 5rem;
 }
 
-
 #div-section4-circle-5 {
   display: flex;
   justify-content: center;
@@ -400,7 +388,6 @@ header {
   font-family: "Montserrat";
 }
 
-
 #div-section5-header {
   margin-bottom: 3rem;
   display: flex;
@@ -412,15 +399,12 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-self: center;
+  flex-wrap: wrap;
 }
-
-
 
 .div-section5-team-member {
   /* background-color: #ffc800; */
 }
-
-
 
 .section5-member-circle {
   width: 224px;
@@ -457,7 +441,7 @@ header {
 .section5-member-role {
   font-size: 16px;
   font-family: "Roboto Slab";
-  color: #6C757D;
+  color: #6c757d;
 }
 
 .section5-member-contact {
@@ -481,7 +465,7 @@ header {
   align-self: center;
   margin-top: 2.5rem;
   font-size: 16px;
-  color: #6C757D;
+  color: #6c757d;
   font-family: "Roboto Slab";
   text-align: center;
   line-height: 1.5rem;
@@ -498,6 +482,7 @@ header {
   justify-content: space-evenly;
   align-self: center;
   width: 60%;
+  flex-wrap: wrap;
 }
 #div-section6-company-logos > img {
   width: 150px;
@@ -546,7 +531,7 @@ header {
   padding-left: 1rem;
   border-radius: 5px;
   font-size: 16px;
-  color: #6C757d;
+  color: #6c757d;
 }
 
 #div-section7-input-right {
@@ -554,7 +539,7 @@ header {
   padding-left: 0.75rem;
 }
 textarea {
-  color: #6C757D;
+  color: #6c757d;
   padding-left: 1rem;
   padding-top: 1rem;
   height: 100%;
@@ -570,7 +555,6 @@ textarea:focus {
 }
 .input-section7-left:focus {
   color: black;
-  
 }
 
 #div-section7-button {
@@ -613,4 +597,73 @@ textarea:focus {
 }
 #h5-section8-policy {
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1346px) {
+  #div-section1-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #div-section1-welcome {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .section4-filler {
+    display: none;
+  }
+
+  .section4-left {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  #div-section4-circle-5 {
+    justify-content: flex-start;
+  }
+  #section4-circle-5 {
+    height: 75px;
+    width: 75px;
+  }
+  #section4-circle-5-id {
+    font-size: 10px;
+  }
+
+  .section4-text {
+    text-align: left;
+    max-height: 200px;
+    margin: 0;
+    width: min-content;
+    overflow: scroll;
+  }
+  /* #section4-circle-5 {
+    margin-right: auto;
+  } */
+  .section4-circle {
+    height: 75px;
+    width: 75px;
+  }
+  #div-section5-team-description {
+    width: 200px;
+  }
+  .div-section-header {
+    text-align: center;
+  }
+  #section-8 {
+    flex-direction: column;
+  }
+  #section-8 > div {
+    margin-bottom: 5px;
+  }
+  .form-section7 {
+    flex-direction: column;
+    width: 300px;
+  }
+  .input-section7-right {
+    height: 200px;
+  }
+  #div-section7-input-right {
+    margin-top: 1rem;
+    padding: 0;
+  }
 }
