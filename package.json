@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jayden-Banks/week3-spec-css-basic-clone/issues"
   },
-  "homepage": "https://github.com/Jayden-Banks/week3-spec-css-basic-clone#readme"
+  "homepage": "https://github.com/Jayden-Banks/week3-spec-css-basic-clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
